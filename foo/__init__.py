@@ -1,3 +1,6 @@
-__all__ = ["Baz"]
+__all__ = ["var"]
 
-from .bar import Baz
+from .mod import __all__ as mod_all
+__all__.extend(mod_all)
+
+var = 1
